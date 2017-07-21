@@ -18,11 +18,12 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   router: { base: '/nuxt-app/' },
-  plugins: ['~plugins/vue-timeago'],
+  plugins: ['~plugins/element-ui', '~plugins/bootstrap-vue'],
   /*
   ** Build configuration
   */
   build: {
+    vendor: ['axios'],
     /*
     ** Run ESLINT on save
     */

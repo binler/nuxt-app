@@ -5,8 +5,10 @@
   "author": "GLODEIT\\Binh.LT <binh.lt@globaldesignit.vn>",
   "private": true,
   "dependencies": {
-    "nuxt": "latest",
-    "vue-timeago": "^3.3.5"
+    "axios": "^0.16.2",
+    "bootstrap-vue": "^0.18.0",
+    "element-ui": "^1.4.0",
+    "nuxt": "latest"
   },
   "config": {
     "nuxt": {
