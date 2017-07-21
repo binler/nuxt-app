@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'starter',
+    title: 'binlerdev- Nghịch vui!!!!',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,6 +18,7 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   router: { base: '/nuxt-app/' },
+  plugins: ['~plugins/vue-timeago'],
   /*
   ** Build configuration
   */
