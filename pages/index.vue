@@ -1,23 +1,27 @@
 <template>
-<section>
-  <div>
-    <h1>Bao lâu rồi em nhỉ?</h1>
-    <p class="total-day">{{gettimeover()}}</p>
-    <p>Ngày</p>
-  </div>
-</section>
+<b-jumbotron header="Bao lâu rồi?">
+  <input type="date" v-model="startDay" />
+  <h1 class="text-center">{{ diffDays }}</h1>
+  <p class="text-center">Ngày</p>
+</b-jumbotron>
 </template>
 
 <script>
 
 export default {
+  data () {
+    return {
+      startDay: '2015-05-19',
+      diffDays: this.getTimeDiff()
+    }
+  },
   methods: {
-    gettimeover () {
+    getTimeDiff: function () {
       let now = new Date()
-      let startDay = new Date(2015, 5, 19)
-      let offset = now.getTime() - startDay.getTime()
-      let totalDays = Math.round(offset / 1000 / 60 / 60 / 24)
-      return totalDays
+      this.startDay = new Date(this.startDay)
+      let timeDiff = Math.abs(this.startDay.getTime() - now.getTime())
+      let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)) - 1
+      return diffDays
     }
   }
 }
