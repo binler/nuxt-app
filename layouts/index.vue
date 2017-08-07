@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="mask"></div>
     <nuxt/>
   </div>
 </template>
@@ -21,7 +22,7 @@ html
   color: #24292e;
   margin: 0;
 }
-#app, #__nuxt, body, html {
+#app, #__nuxt, .mask, body, html {
     height: 100%;
     width: 100%
 }
@@ -37,5 +38,11 @@ html
   justify-content: center;
   align-items: center;
   flex-direction: column
+}
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(51, 9, 179, 0.4);
 }
 </style>
