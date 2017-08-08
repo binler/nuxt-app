@@ -1,7 +1,4 @@
-import Vue from 'vue'
 import Unsplash from 'unsplash-js'
-
-Vue.use(Unsplash)
 
 const unsplash = new Unsplash({
   applicationId: '292d30455c7a215186a9d53be1ae9d4eb59e5aff0ba123fc5fbbbf72b3bee12d',
