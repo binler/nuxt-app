@@ -5,15 +5,14 @@
 </template>
 
 <script>
-
+import { toJson } from 'unsplash-js'
 export default {
   mounted () {
-    console.log(this.$unsplash)
-    // unsplash.currentUser.profile()
-    // .then(toJson)
-    // .then(json => {
-    //   console.log(json)
-    // })
+    return this.$unsplash.currentUser.profile()
+    .then(toJson)
+    .then(json => {
+      console.log(json)
+    })
   }
 }
 </script>
