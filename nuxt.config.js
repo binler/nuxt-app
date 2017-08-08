@@ -19,13 +19,14 @@ module.exports = {
   loading: { color: '#3B8070' },
   router: { base: '/nuxt-app/' },
   plugins: [
-    '~plugins/bootstrap-vue'
+    '~plugins/bootstrap-vue',
+    '~plugins/unsplash.js'
   ],
   /*
   ** Build configuration
   */
   build: {
-    vendor: ['axios', '~plugins/unsplash.js'],
+    vendor: ['axios', 'unsplash-js'],
     /*
     ** Run ESLINT on save
     */

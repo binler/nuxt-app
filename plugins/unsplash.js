@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import Unsplash from 'unsplash-js'
 
 const unsplash = new Unsplash({
@@ -6,4 +7,6 @@ const unsplash = new Unsplash({
   callbackUrl: 'http://localhost:3333/nuxt-app/image'
 })
 
-export default unsplash
+export default ({ app, store }) => {
+  Vue.prototype.$unsplash = unsplash
+}
