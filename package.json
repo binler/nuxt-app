@@ -7,8 +7,7 @@
   "dependencies": {
     "@nuxtjs/bootstrap-vue": "^2.0.0",
     "axios": "^0.16.2",
-    "nuxt": "latest",
-    "unsplash-js": "^4.6.0"
+    "nuxt": "latest"
   },
   "config": {
     "nuxt": {
