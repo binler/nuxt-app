@@ -9,6 +9,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import axios from 'axios'
 export default {
   asyncData ({ req, params }) {
@@ -19,6 +20,15 @@ export default {
     })
     .catch(err => {
       console.log('Error happened during fetching!', err)
+=======
+import { toJson } from 'unsplash-js'
+export default {
+  mounted () {
+    return this.$unsplash.currentUser.profile()
+    .then(toJson)
+    .then(json => {
+      console.log(json)
+>>>>>>> ec69cf5740faaf53e6f57993922a3ee946d7716a
     })
   }
 }
