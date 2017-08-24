@@ -2,13 +2,11 @@
   <div class="container">
     <div class="bi-content">
       <b-card-group columns>
-        <b-card v-for="item in repos" :header="item.name" :key="item.id">
-          <blockquote class="blockquote mb-0">
-            <p>{{ (item.description = null) ? 'No des' : item.description }}</p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
+        <b-card v-for="item in repos" :title="item.name" :key="item.id">
+          <p class="card-text">{{ (item.description == null) ? 'No description' : item.description }}</p>
+          <p class="card-text"><small class="text-muted"><timeago :since="item.updated_at"></timeago></small></p>
         </b-card>
-      </b-card-group columns>
+      </b-card-group>
     </div>
   </div>
 </template>

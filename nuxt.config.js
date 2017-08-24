@@ -19,6 +19,7 @@ module.exports = {
   loading: { color: '#3B8070' },
   router: { base: '/nuxt-app/' },
   modules : ['@nuxtjs/bootstrap-vue'],
+  plugins: ['~/plugins/vue-timeago'],
   /*
   ** Build configuration
   */

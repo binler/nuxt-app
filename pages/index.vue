@@ -3,9 +3,10 @@
       <h1 class="text-center intro-head-text">binler.</h1>
       <nav class="intro-nav">
         <ul class="d-flex justify-content-center">
-          <li><nuxt-link to="/image">ảnh</nuxt-link></li>
           <li><nuxt-link to="/about">tôi!</nuxt-link></li>
-          <li><nuxt-link to="/timepass">thời gian</nuxt-link></li>
+          <li><nuxt-link to="/code">code</nuxt-link></li>
+          <li><nuxt-link to="/image">ảnh</nuxt-link></li>
+          <li><nuxt-link to="/timepass">love</nuxt-link></li>
         </ul>
       </nav>
   </div>
@@ -24,7 +25,7 @@ export default {
   position: relative;
 }
 .intro-nav {
-  margin: 0 auto;
+  margin: 1.5em auto;
   position: relative;
   display: block;
 }

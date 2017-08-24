@@ -6,7 +6,7 @@
     <b-collapse is-nav id="nav_collapse">
       <b-nav is-nav-bar>
         <b-nav-item href="/nuxt-app/about">Tôi!</b-nav-item>
-        <b-nav-item href="/nuxt-app/repo">Github</b-nav-item>
+        <b-nav-item href="/nuxt-app/repo">Code</b-nav-item>
         <b-nav-item href="/nuxt-app/image">Ảnh</b-nav-item>
         <b-nav-item href="/nuxt-app/love">Love</b-nav-item>
       </b-nav>

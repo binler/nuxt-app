@@ -43,6 +43,6 @@ html
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(51, 9, 179, 0.4);
+  background-color: rgba(140, 2, 2, 0.4);
 }
 </style>
