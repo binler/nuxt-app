@@ -1,11 +1,11 @@
 <template>
-<div class="container">
+<b-container>
   <div class="bi-content">
     <b-card-group columns>
       <b-card v-for="item in images" :key="item.id" :img-src="item.urls.small" img-fluid img-alt="image" overlay></b-card>
     </b-card-group columns>
   </div>
-</div>
+</b-container>
 </template>
 
 <script>

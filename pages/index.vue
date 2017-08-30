@@ -6,7 +6,7 @@
           <li><nuxt-link to="/about">tôi!</nuxt-link></li>
           <li><nuxt-link to="/code">code</nuxt-link></li>
           <li><nuxt-link to="/image">ảnh</nuxt-link></li>
-          <li><nuxt-link to="/timepass">love</nuxt-link></li>
+          <li><nuxt-link to="/love">love</nuxt-link></li>
         </ul>
       </nav>
   </div>

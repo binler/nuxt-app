@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <b-container>
     <div class="bi-content">
       <b-card-group columns>
         <b-card v-for="item in repos" :title="item.name" :key="item.id">
@@ -8,7 +8,7 @@
         </b-card>
       </b-card-group>
     </div>
-  </div>
+  </b-container>
 </template>
 
 <script>
